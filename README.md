@@ -1,3 +1,57 @@
+# Notes from Relativistic GAN
+*See original project readme below*
+
+
+## Installation
+Local:
+```
+conda create -n pytorch_tf
+conda activate pytorch_tf
+conda install pip
+conda install pytorch
+pip install tensorflow_gpu
+pip install torchvision
+pip install IPython
+pip install graphviz
+pip install scipy
+pip install opencv-python
+```
+
+AWS:
+```
+source activate pytorch_p36
+pip install --upgrade pip
+pip install graphviz
+pip install opencv-python
+pip install tensorflow_gpu
+```
+AWS install responds with these errors, doesn't seem to effect training
+```
+fastai 1.0.40 requires dataclasses, which is not installed.
+fastai 1.0.40 requires nvidia-ml-py3, which is not installed.
+thinc 6.12.1 has requirement msgpack<0.6.0,>=0.5.6, but you'll have msgpack 0.6.0 which is incompatible.
+```
+
+
+## Run
+```
+python GAN_losses_iter_art.py
+```
+
+## Inference
+```
+python inference.py
+```
+
+## Results
+
+### Training RaLSGAN on cats, 45000 iterations
+
+![](/images/RaLSGAN_cat_training.gif)
+
+
+# Original project README below:
+
 # Relativistic GAN
 
 Code to replicate all analyses from the paper [The relativistic discriminator: a key element missing from standard GAN](https://arxiv.org/abs/1807.00734)
