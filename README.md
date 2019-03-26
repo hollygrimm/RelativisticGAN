@@ -1,4 +1,4 @@
-# Notes from Relativistic GAN
+# Notes from fork of Relativistic GAN by @AlexiaJM
 *See original project readme below*
 
 
